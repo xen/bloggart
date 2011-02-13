@@ -1,18 +1,32 @@
+import logging
+
+# In production, use 'True'
+memcaching = True
+
+# In production, use 'logging.WARNING'
+logging_level = logging.WARNING
+
+# Enables the URL "/__regen".
+# When a HTTP GET is executed against it, all the Posts are Forcefully Regenerated.
+# Should always be set to "False", except during situations that require
+# to regenerate the content at every request (i.e. while developing a new theme).
+allow_forced_regen = False
+
 # Name of the blog
-blog_name = 'My Blog'
+blog_name = 'Vurt is blog about Google App Engine'
 
 # Your name (used for copyright info)
-author_name = 'the author'
+author_name = 'Mikhail Kashkin'
 
 # (Optional) slogan
 slogan = 'This is my blog'
 
 # The hostname this site will primarially serve off (used for Atom feeds)
-host = 'localhost:8080'
+host = 'www.vurt.ru'
 
 # Selects the theme to use. Theme names correspond to directories under
 # the 'themes' directory, containing templates and static content.
-theme = 'default'
+theme = 'shadesofgray'
 
 # List of page templates
 page_templates = {
@@ -32,11 +46,7 @@ post_path_format = '/%(year)d/%(month)02d/%(slug)s'
 sidebars = [
   ('Blogroll', [
     '<a href="http://blog.notdot.net/">Nick Johnsonz</a>',
-    '<a href="http://www.billkatz.com/">Bill Katz</a>',
-    '<a href="http://www.codinghorror.com/blog/">Coding Horror</a>',
-    '<a href="http://craphound.com/">Craphound</a>',
     '<a href="http://www.neopythonic.blogspot.com/">Neopythonic</a>',
-    '<a href="http://www.schneier.com/blog/">Schneier on Security</a>',
   ]),
 ]
 
