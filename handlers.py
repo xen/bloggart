@@ -11,6 +11,9 @@ import models
 import post_deploy
 import utils
 
+from google.appengine.dist import use_library
+use_library('django', '0.96')
+
 from django import newforms as forms
 from google.appengine.ext.db import djangoforms
 

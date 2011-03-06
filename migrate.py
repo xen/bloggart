@@ -4,8 +4,13 @@ import logging
 import re
 import urllib
 from xml.etree import ElementTree
+
+from google.appengine.dist import use_library
+use_library('django', '0.96')
+
 from django.utils import simplejson
 from django.utils import html
+
 from google.appengine.api import urlfetch
 from google.appengine.ext import db
 from google.appengine.ext import deferred

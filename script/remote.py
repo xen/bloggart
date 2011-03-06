@@ -4,6 +4,9 @@ import getpass
 import os
 import sys
 
+from google.appengine.dist import use_library
+use_library('django', '0.96')
+
 ## Application specific
 SDK_DIR = '/usr/local/google_appengine'
 APP_DIR = '/home/aht/src/bloggart'
@@ -15,13 +18,13 @@ REMOTE_API_PATH = '/remote_api'
 ## Extra paths to be inserted into sys.path,
 ## including the SDK, it's libraries, your APPDIR, and APPDIR/lib
 EXTRA_PATHS = [
-	SDK_DIR,
-	os.path.join(SDK_DIR, 'lib', 'antlr3'),
-	os.path.join(SDK_DIR, 'lib', 'django'),
-	os.path.join(SDK_DIR, 'lib', 'webob'),
-	os.path.join(SDK_DIR, 'lib', 'yaml', 'lib'),
-	APP_DIR,
-	os.path.join(APP_DIR, 'lib'),
+  SDK_DIR,
+  os.path.join(SDK_DIR, 'lib', 'antlr3'),
+  os.path.join(SDK_DIR, 'lib', 'django'),
+  os.path.join(SDK_DIR, 'lib', 'webob'),
+  os.path.join(SDK_DIR, 'lib', 'yaml', 'lib'),
+  APP_DIR,
+  os.path.join(APP_DIR, 'lib'),
 ]
 sys.path = EXTRA_PATHS + sys.path
 

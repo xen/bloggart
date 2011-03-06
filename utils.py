@@ -5,6 +5,9 @@ import unicodedata
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp.template import _swap_settings
 
+
+from google.appengine.dist import use_library
+use_library('django', '0.96')
 import django.conf
 from django import template
 from django.template import loader
