@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import logging
 
 # In production, use 'True'
@@ -19,7 +20,7 @@ blog_name = 'Vurt is blog about Google App Engine'
 author_name = 'Mikhail Kashkin'
 
 # (Optional) slogan
-slogan = 'This is my blog'
+slogan = u'Блог о технологии Google App Engine, архитектуре приложений, статистике и других вещах'
 
 # The hostname this site will primarially serve off (used for Atom feeds)
 host = 'www.vurt.ru'
@@ -30,8 +31,8 @@ theme = 'shadesofgray'
 
 # List of page templates
 page_templates = {
-	'Theme.html': 'Theme',
-	'Simple.html': 'Simple',
+  'Theme.html': 'Theme',
+  'Simple.html': 'Simple',
 }
 
 # Defines the URL organization to use for blog postings. Valid substitutions:
@@ -47,6 +48,9 @@ sidebars = [
   ('Blogroll', [
     '<a href="http://blog.notdot.net/">Nick Johnsonz</a>',
     '<a href="http://www.neopythonic.blogspot.com/">Neopythonic</a>',
+    '<a href="http://googleappengine.blogspot.com/">GAE Blog</a>',
+    u'<a href="http://eaglenest.ru/">Блог Орлова</a>',
+    '<a href="http://nek.tumblr.com/">Daily Rants</a>'
   ]),
 ]
 
@@ -58,13 +62,13 @@ html_mime_type = "text/html; charset=utf-8"
 
 # To use disqus for comments, set this to the 'short name' of the disqus forum
 # created for the purpose.
-disqus_forum = None
+disqus_forum = 'vurtru'
 
 # Length (in words) of summaries, by default
 summary_length = 200
 
 # If you want to use Google Analytics, enter your 'web property id' here
-analytics_id = None
+analytics_id = 'UA-283470-33'
 
 # If you want to use PubSubHubbub, supply the hub URL to use here.
 hubbub_hub_url = 'http://pubsubhubbub.appspot.com/'
@@ -97,8 +101,8 @@ url_prefix = ''
 # This allows you to expand on your social graph.
 rel_me = None
 
-# For use a feed proxy like feedburne.google.com
-feed_proxy = None
+# For use a feed proxy like feedburner.google.com
+feed_proxy = "http://feeds.feedburner.com/app-engine"
 
 # To use Google Friends Connect.                                          
 # If you want use Google Friends Connect, go to http://www.google.com/friendconnect/ 
@@ -110,3 +114,7 @@ google_friends_members  = True # For a members container.
 # To format the date of your post.
 # http://docs.djangoproject.com/en/1.1/ref/templates/builtins/#now
 date_format = "d F, Y"
+
+# Twitter user
+
+twitter_user = "mikashkin"

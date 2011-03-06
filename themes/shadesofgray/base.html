@@ -5,6 +5,8 @@
   {% block style %}
   <link rel="stylesheet" type="text/css" media="screen" href="/css/screen.css" />
   {% endblock %}
+  <link rel="stylesheet" type="text/css" media="screen" href="/static/shadesofgray/css/shadesofgray.css" />  
+
   {% if config.highlighting_style %}
   <link rel="stylesheet" type="text/css" media="screen" href="/css/pygments_{{config.highlighting_style}}.css" />
   {% endif %}
@@ -81,9 +83,7 @@
 			</p>
 			<p class="bottom-right" >
 				<a href="{{config.url_prefix}}/">Home</a> |
-        <a href="{{config.url_prefix}}/feeds/atom.xml">Atom</a> |
-				<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> |
-		   	<a href="http://validator.w3.org/check/referer">XHTML</a>
+        {% if config.feed_proxy %}<a href="{{config.feed_proxy}}">Feed</a>{% else %}<a href="{{config.url_prefix}}/feeds/atom.xml">Atom</a> {% endif %}
 		    <br>powered by <a href='https://github.com/Arachnid/bloggart'>Bloggart for Google App Engine</a>
 			</p>
 		</div><!-- footer-bottom -->
