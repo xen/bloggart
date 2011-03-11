@@ -7,8 +7,8 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'lib'))
 ultimate_sys_path = None
 
 def fix_sys_path():
-    global ultimate_sys_path
-    if ultimate_sys_path is None:
-        ultimate_sys_path = list(sys.path)
-    else:
-        sys.path[:] = ultimate_sys_path
+  global ultimate_sys_path
+  if ultimate_sys_path is None:
+    ultimate_sys_path = list(sys.path)
+  else:
+    sys.path[:] = ultimate_sys_path
