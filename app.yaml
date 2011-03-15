@@ -20,6 +20,10 @@ handlers:
 - url: /.*\.(css|js)
   script: minifier.py
 
+- url: /(robots.txt|yandex_7fa8a064ec105a1b.html)
+  static_files: static/\1
+  upload: static/(robots.txt|yandex_7fa8a064ec105a1b.html)
+
 - url: /remote_api
   script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
   login: admin
