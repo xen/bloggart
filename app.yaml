@@ -16,7 +16,7 @@ skip_files: |
 
 
 handlers:
-  
+
 - url: /.*\.(css|js)
   script: minifier.py
 

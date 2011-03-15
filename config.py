@@ -14,10 +14,10 @@ logging_level = logging.WARNING
 allow_forced_regen = False
 
 # Name of the blog
-blog_name = 'Vurt is blog about Google App Engine'
+blog_name = u'Vurt is blog about Google App Engine'
 
 # Your name (used for copyright info)
-author_name = 'Mikhail Kashkin'
+author_name = u'Mikhail Kashkin'
 
 # (Optional) slogan
 slogan = u'Блог о технологии Google App Engine, архитектуре приложений, статистике и других вещах'
@@ -91,7 +91,7 @@ default_markup = 'html'
 # one of 'manni', 'perldoc', 'borland', 'colorful', 'default', 'murphy',
 # 'vs', 'trac', 'tango', 'fruity', 'autumn', 'bw', 'emacs', 'pastie',
 # 'friendly', 'native'.
-highlighting_style = 'friendly'
+highlighting_style = 'trac'
 
 # Absolute url of the blog application use '/blog' for host/blog/
 # and '' for host/.Also remember to change app.yaml accordingly
@@ -104,8 +104,8 @@ rel_me = None
 # For use a feed proxy like feedburner.google.com
 feed_proxy = "http://feeds.feedburner.com/app-engine"
 
-# To use Google Friends Connect.                                          
-# If you want use Google Friends Connect, go to http://www.google.com/friendconnect/ 
+# To use Google Friends Connect.
+# If you want use Google Friends Connect, go to http://www.google.com/friendconnect/
 # and register your domain for get a Google Friends connect ID.
 google_friends_id = None
 google_friends_comments = True # For comments.

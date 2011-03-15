@@ -5,12 +5,16 @@
   {% block style %}
   <link rel="stylesheet" type="text/css" media="screen" href="/css/screen.css" />
   {% endblock %}
-  <link rel="stylesheet" type="text/css" media="screen" href="/static/shadesofgray/css/shadesofgray.css" />  
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/shadesofgray.css" />
 
   {% if config.highlighting_style %}
   <link rel="stylesheet" type="text/css" media="screen" href="/css/pygments_{{config.highlighting_style}}.css" />
   {% endif %}
+  {% if config.feed_proxy %}
+  <link rel="alternate" type="application/atom+xml" href="{{config.feed_proxy}}" />
+  {% else %}
   <link rel="alternate" type="application/atom+xml" href="{{config.url_prefix}}/feeds/atom.xml" />
+  {% endif %}
   <link rel="SHORTCUT ICON" href="{{config.url_prefix}}/static/{{config.theme}}/favicon.ico"/>
   {% if config.rel_me %}
   <link rel="me" href="{{config.rel_me}}" />
@@ -78,7 +82,7 @@
 	</div></div><!-- content-wrap -->
 		<div id="footer-bottom">
 			<p class="bottom-left">
-			&copy; {{config.author_name}} 
+			&copy; {{config.author_name}}
 			<br>designed by <a href='http://honcheng.com'>honcheng</a>
 			</p>
 			<p class="bottom-right" >
@@ -103,7 +107,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <!--include the line number hackz0r script-->
   <script src="http://gist.github.com/raw/730319/gist-line-number-hack.js"></script>
-  <script type="text/javascript">addLineNumbersToAllGists() </script>   
+  <script type="text/javascript">addLineNumbersToAllGists() </script>
 
 </body>
 </html>
