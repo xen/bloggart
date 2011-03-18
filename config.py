@@ -14,13 +14,13 @@ logging_level = logging.WARNING
 allow_forced_regen = False
 
 # Name of the blog
-blog_name = u'Vurt is blog about Google App Engine'
+blog_name = u'Vurt.ru'
 
 # Your name (used for copyright info)
 author_name = u'Mikhail Kashkin'
 
 # (Optional) slogan
-slogan = u'Блог о технологии Google App Engine, архитектуре приложений, статистике и других вещах'
+slogan = u'Блог об облачных вычислениях, разработке сайтов с высокой нагрузкой, управлении проектами, HTML5, технологии Google App Engine, архитектуре приложений, статистике и других вещах'
 
 # The hostname this site will primarially serve off (used for Atom feeds)
 host = 'www.vurt.ru'

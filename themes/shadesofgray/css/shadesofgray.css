@@ -928,3 +928,12 @@ ul.archive li .post-details a:visited {
 
 /* share */
 .share{margin:20px 0;}
+
+/* Disqus fixes */
+
+.dsq-comment-body {
+   padding: 0 0 0 74px !important;
+}
+.dsq-textarea-reply {
+   margin-left: 74px !important;
+}

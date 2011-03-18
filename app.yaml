@@ -3,6 +3,12 @@ version: live
 runtime: python
 api_version: 1
 
+default_expiration: 14d 
+
+derived_file_type:
+- python_precompiled
+
+
 skip_files: |
  ^(.*/)?(
  (app\.yaml)|
@@ -20,9 +26,9 @@ handlers:
 - url: /.*\.(css|js)
   script: minifier.py
 
-- url: /(robots.txt|yandex_7fa8a064ec105a1b.html)
+- url: /(robots.txt|favicon.ico|yandex_7fa8a064ec105a1b.html)
   static_files: static/\1
-  upload: static/(robots.txt|yandex_7fa8a064ec105a1b.html)
+  upload: static/(robots.txt|favicon.ico|yandex_7fa8a064ec105a1b.html)
 
 - url: /remote_api
   script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
@@ -42,3 +48,7 @@ handlers:
 
 - url: /.*
   script: static.py
+
+
+#inbound_services:
+#- warmup
