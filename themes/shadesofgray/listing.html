@@ -9,9 +9,11 @@
 	  Posted on {{post.published|date:"N"}} {{post.published|date:"d"}}, {{post.published|date:"Y"}} {{post.published_tz|date:"H:i"}} by {{config.author_name}}
       {% if post.tags %}
         | Filed under
+        <span class="tag">
         {% for tag in post.tag_pairs %}
           <a href="{{config.url_prefix}}/tag/{{tag.1|escape}}">{{tag.0|escape}}</a>{% if not forloop.last %},{% endif %}
         {% endfor %}
+        </span>
       {% endif %}
     </p>
     {{post.summary}}

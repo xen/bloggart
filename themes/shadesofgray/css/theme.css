@@ -776,6 +776,9 @@ ul.subscribe-stuff li img {
 }
 * html body .left .post-meta ul li { height: 1%; }
 
+.tag { background: url(/static/{{ config.theme }}/images/tag.gif) no-repeat 2px center;margin:0;text-align:left;color:#147DB6;padding: 3px 5px 3px 20px;}
+.permalink { background: url(/static/{{ config.theme }}/images/anchor.png) no-repeat 2px center;margin:0;text-align:left;color:#147DB6;padding: 3px 5px 3px 20px;}
+  
 .left .post-meta ul.tags li { background: url(/static/{{ config.theme }}/images/tag.gif) no-repeat 2px center; }
 .left .post-meta ul li.comment { background: url(/static/{{ config.theme }}/images/comment.gif) no-repeat 2px center; }
 

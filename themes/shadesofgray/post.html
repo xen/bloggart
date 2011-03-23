@@ -8,11 +8,13 @@
       Posted on {{post.published_tz|date:"H:i"}} by {{config.author_name}}
       {% if post.tags %}
         | Filed under
+        <span class="tag">
         {% for tag in post.tag_pairs %}
           <a href="{{config.url_prefix}}/tag/{{tag.1|escape}}">{{tag.0|escape}}</a>{% if not forloop.last %},{% endif %}
         {% endfor %}
+        </span>
       {% endif %}
-		| <a href="{{config.url_prefix}}{{post.path}}">PERMALINK</a>
+		| <a href="{{config.url_prefix}}{{post.path}}" class="permalink">PERMALINK</a>
     </p>
   {{post.rendered}}
   <br><br>
