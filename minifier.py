@@ -1,4 +1,5 @@
 import logging
+import datetime
 import wsgiref.handlers
 import os
 
@@ -13,6 +14,7 @@ import config
 import jsmin
 import cssmin
 
+HTTP_DATE_FMT = "%a, %d %b %Y %H:%M:%S GMT"
 
 class CssMinifier(webapp.RequestHandler):
   """
@@ -49,8 +51,11 @@ class CssMinifier(webapp.RequestHandler):
       # Save in Memcache
       memcache.set(cssPath, cssRenderingResult)
 
-    # Setting Content-Type as "text/javascript"
+    # Setting Content-Type as "text/css"
     self.response.headers['Content-Type'] = 'text/css'
+    now = datetime.datetime.now().replace(second=0, microsecond=0)
+    self.response.headers['Last-Modified'] = now.strftime(HTTP_DATE_FMT)
+    #self.response.headers['Expires'] = now
     logging.debug("Serving Minified CSS: " + cssPath)
     # Rendering the Result
     self.response.out.write(cssRenderingResult)
@@ -92,6 +97,8 @@ class JSMinifier(webapp.RequestHandler):
 
     # Setting Content-Type as "text/javascript"
     self.response.headers['Content-Type'] = 'application/javascript'
+    now = datetime.datetime.now().replace(second=0, microsecond=0)
+    self.response.headers['Last-Modified'] = now.strftime(HTTP_DATE_FMT)
     logging.debug("Serving Minified Javascript: "+jsPath)
     # Rendering the Result
     self.response.out.write( jsRenderingResult )

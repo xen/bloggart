@@ -15,6 +15,7 @@ skip_files: |
  (app\.yml)|
  (index\.yaml)|
  (index\.yml)|
+ (\.DS_Store)|
  (#.*#)|
  (.*~)|
  (.*\.py[co])|

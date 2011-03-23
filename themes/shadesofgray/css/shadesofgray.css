@@ -16,19 +16,20 @@
 @import url(http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT&subset=latin);
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&subset=latin);
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono&subset=latin);
+*/
 
 body {
 	font: 12px/170% 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Sans-Serif;
 	color: #777;
 	margin: 0; padding: 0;
-	
+
 }
 /* links */
 a:link, a:visited {
 	text-decoration: none;
 	color: #52788e;
 }
-a:hover { 
+a:hover {
 	color: #000;
 }
 a:link.more, a:visited.more {
@@ -54,7 +55,7 @@ div.alignright {
 
 /* Headers */
 h1, h2, h3, h4 {
-	font: bold 0.8em/1.0em 'Droid Sans','Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Sans-Serif;
+	font: bold 0.8em/1.0em 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Sans-Serif;
 	color: #555;
 	margin: 8px 0px;
 	text-transform: uppercase;
@@ -104,11 +105,11 @@ code, pre {
   	padding: 15px;
   	text-align: left;
   	display: block;
-  	overflow: auto;  
+  	overflow: auto;
   	font: 500 1em/1.5em Monospace, 'Lucida Console', 'Courier New' ;
   	white-space: pre;
   	border: 1px solid #a8a8a8;
-	background: #575757;  
+	background: #575757;
 	color: #fff;
 }*/
 
@@ -368,7 +369,7 @@ fieldset.search {
 }
 
 #main h2 {
-	font: 1.6em/1em 'Josefin Sans Std Light', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Sans-Serif;
+	font: 1.6em/1em 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Sans-Serif;
    color: #666;
 	letter-spacing: -1.0px;
 	margin-bottom: 0;
@@ -376,12 +377,12 @@ fieldset.search {
 	text-transform: uppercase;
 }
 #main h2 a { color: #666; }
-#main h2 a:hover { 
-	color: #000; 
+#main h2 a:hover {
+	color: #000;
 }
 #sidebar h3 {
 	text-align: right;
-	font: 1.2em 'Droid Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Sans-Serif;
+	font: 1.2em 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Sans-Serif;
    letter-spacing: .2px;
 	margin-right: 10px;
 	text-transform: uppercase;
