@@ -118,3 +118,7 @@ date_format = "d F, Y"
 # Twitter user
 
 twitter_user = "mikashkin"
+
+# Other sharing 
+
+sharing_buttons = True

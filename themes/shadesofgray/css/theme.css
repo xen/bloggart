@@ -703,8 +703,8 @@ ul.subscribe-stuff li img {
 .right .share-box {
    margin: 20px 12px 0 20px;
 	padding: 0 10px 10px 20px;
-   background: #FAFAFA;
-   border: 1px solid #EAECEE;
+   /* background: #FAFAFA;
+   border: 1px solid #EAECEE;*/
 	overflow: hidden;
 	width: 494px;
 }

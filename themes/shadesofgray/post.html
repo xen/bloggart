@@ -64,24 +64,9 @@
                     <a title="Post to Google Buzz" class="google-buzz-button" href="http://www.google.com/buzz/post" data-button-style="small-count"></a>
                     <script type="text/javascript" src="http://www.google.com/buzz/api/button.js"></script>
                 </li>
-                <li>
-                    <!-- Reddit Button: http://www.reddit.com/buttons/ -->
-                    <script type="text/javascript" src="http://reddit.com/static/button/button1.js"></script>
-                </li>
-                <li>
-                    <!-- Digg Smart Button: http://about.digg.com/downloads/button/smart -->
-                    <script type="text/javascript">
-                    (function() {
-                    var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
-                    s.type = 'text/javascript';
-                    s.async = true;
-                    s.src = 'http://widgets.digg.com/buttons.js';
-                    s1.parentNode.insertBefore(s, s1);
-                    })();
-                    </script>
-                    <!-- Compact Button -->
-                    <a class="DiggThisButton DiggCompact"></a>
-                </li>
+                {# <li><!-- Reddit Button: http://www.reddit.com/buttons/ --> <script type="text/javascript" src="http://reddit.com/static/button/button1.js"></script> </li> #}
+                {# <li> <!-- Digg Smart Button: http://about.digg.com/downloads/button/smart --> #}
+                {#<script type="text/javascript">(function() {var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];s.type = 'text/javascript';s.async = true;s.src = 'http://widgets.digg.com/buttons.js';s1.parentNode.insertBefore(s, s1);})();</script><!-- Compact Button --><a class="DiggThisButton DiggCompact"></a></li> #}
             </ul>
         </div>
     {% endif %}
