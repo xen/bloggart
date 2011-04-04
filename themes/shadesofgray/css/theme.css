@@ -1,3 +1,5 @@
+/* @override http://www.vurt.ru/css/theme.css */
+
 /* merged all css together */
 /* http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ */
 
@@ -147,8 +149,7 @@ img.borderless{
 img.float-right {	margin: 5px 0px 10px 10px; }
 img.float-left { margin: 5px 10px 10px 0px; }
 
-/*
-code, pre {
+pre {
   	margin: 3px 0;
   	padding: 15px;
   	text-align: left;
@@ -156,10 +157,15 @@ code, pre {
   	overflow: auto;  
   	font: 500 1em/1.5em Monospace, 'Lucida Console', 'Courier New' ;
   	white-space: pre;
-  	border: 1px solid #a8a8a8;
-	background: #575757;  
-	color: #fff;
-}*/
+  	border: 1px solid #F0F0F0;
+  	background: #f8f8f8;
+}
+code {
+	font: 500 1em/1.5em Monospace, 'Lucida Console', 'Courier New' ;
+	/*white-space: pre; */
+	border: 1px solid #F0F0F0;
+	background: #f8f8f8;
+}
 
 acronym {
 	cursor: help;
